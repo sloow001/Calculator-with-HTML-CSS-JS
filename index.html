@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="progamação,css,html,javascript">
+    <meta name="description" content="aprenda progamação fácil!">
+    <meta name="author" content="Migs">
+    <link rel="stylesheet" href="./style.css">
+    <title>CALCULADORA</title>
+</head>
+<body>
+    <div class="container">
+        <h1>CALCULADORA</h1>
+        <p id="display">0</p>
+        <div class="btn">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="deleteLastCharacter()"><</button>
+            <button onclick="appendOperator('/')">/</button>
+            <button onclick="appendOperator('*')">X</button>
+        </div>
+        <div class="btn">
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button onclick="appendOperator('-')">-</button>
+        </div>
+        <div class="btn">
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button onclick="appendOperator('+')">+</button>
+        </div>
+        <div class="btn">
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('3')">3</button>
+        </div>
+        <div class="btn">
+            <button class="maior" onclick="appendNumber('0')">0</button>
+            <button onclick="appendDecimal('.')">.</button>
+        </div>
+        <button class="submit" onclick="calculate()">=</button>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
